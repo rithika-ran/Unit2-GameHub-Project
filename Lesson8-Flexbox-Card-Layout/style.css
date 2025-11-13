@@ -1,0 +1,131 @@
+/* reset and base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* container for consistent width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER SECTION */
+.main-header {
+    background-color: #B26144;
+    padding: 20px 0 ;
+}
+
+.main-header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff  ;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-nav a {
+color: #ffffff;
+text-decoration: none;
+margin-left: 30px;
+transition: color  0.2s ease;
+
+}
+/* Lesson 7: Hover */
+.main-nav a:hover {
+    color: rgb(183, 149, 242);
+    border-bottom: 2px solid #8b49dc;
+    padding-bottom: 5px;
+}
+
+.main-nav a:focus {
+    outline: 2px solid #1b1bbc;
+    outline-offset: 4px;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: #C89484;
+    color: #ffffff;
+    padding: 100px 0 ;
+    text-align: center;
+
+}
+
+.hero-title {
+    font-size: 48px;
+    margin-bottom: 20px ;
+
+}
+
+.hero-subtitle { 
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.btn {
+    padding: 20px 40px ;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.btn-primary {
+    background-color: #4e2b1e;
+    color: #ffffff;
+}
+.btn:hover{
+    transform: translateY(-2px) scale(1.05);
+    opacity: 0.9;
+}
+
+/* Lesson 8 */
+
+.features { padding: 80px 0; background-color: #f8f9fa;}
+.section-title { text-align: center; font-size:  36px;}
+.section-subtitle { text-align:center; color: #7f8c8d;}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px   ;
+
+}
+
+.feature-card { 
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.08);
+    flex: 1;
+    transition: transform 0.3 ,  box-shadow 0.3 ;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px ) ;
+    box-shadow: 0 10px 25px rgb(0, 0, 0, 0.15);
+
+}
