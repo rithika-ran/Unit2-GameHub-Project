@@ -206,3 +206,44 @@ width: 100%;
 border-radius: 12px;
 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+.community {
+    padding: 80px 0 ;
+    background-color: #ffffff;
+}
+
+.community-content {
+   display: flex;
+    align-items: center;
+    gap: 60px ;
+ flex-direction: row-reverse;
+}
+
+.community-text {
+    flex: 1;
+}
+
+.community-image {
+    flex: 1;
+}
+
+.community-text h2 {
+    color: #532323;
+    margin-bottom: 25px;
+}
+
+.join-btn {
+    background: #E74C3C;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.community-image img {
+
+border-radius: 12px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
