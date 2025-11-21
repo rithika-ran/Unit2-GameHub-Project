@@ -1,0 +1,49 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: relative;
+    /* animation-name: example;
+    animation-duration: 4s ; */
+    /* animation: moveColor 1s infinite; */
+    /* animation: colorTransform 1s infinite; */
+     animation: heartBeat 1s infinite;
+    
+}
+
+@keyframes example {
+    from {background-color: coral;}
+    to {background-color: rgb(155, 199, 133);}
+}
+
+@keyframes example {
+    0% {background-color: coral;}
+    25% {background-color: rgb(117, 177, 117);}
+    50% {background-color: rgb(121, 165, 165);}
+    100% {background-color: rgb(143, 125, 160);}
+}
+
+@keyframes moveColor {
+    0% {background-color: rgb(228, 126, 88); left: 0; top: 0;}
+    25% {background-color: rgb(117, 177, 117); left: 150px; top: 0;}
+    50% {background-color: rgb(121, 165, 165); left: 150px; top: 150px;}
+    75% {background-color: rgb(189, 132, 151); left: 0; top: 150px;}
+    100% {background-color: rgb(143, 125, 160); left: 0; top: 0;}
+}
+
+@keyframes colorTransform {
+    0% {background-color: rgb(228, 126, 88); transform: rotate(0deg) scale(1);}
+    25% {background-color: rgb(117, 177, 117); transform:rotate(90deg) scale(1.2);}
+    50% {background-color: rgb(121, 165, 165);transform: rotate(180deg) scale(1);}
+    75% {background-color: rgb(189, 132, 151); transform: rotate(270deg) scale(1.2);}
+    100% {background-color: rgb(143, 125, 160); transform: rotate(360deg) scale(1);}
+}
+
+@keyframes heartBeat {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.2);}
+    50% {transform:  scale(1);}
+    75% {transform: scale(1.2);}
+    100% { transform:  scale(1);}
+}
+
