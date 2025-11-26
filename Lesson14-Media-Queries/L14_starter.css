@@ -595,21 +595,61 @@ ACCESSIBILITY EXPLANATION:
    responsive design - media queries
    =================================== */
 
+
+   /* style the hamburger menu */
+   .hamburger {
+  display:none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.hamburger:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #2c3e50;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color 0.3s ease;
+}
+.mobile-nav a:hover {
+  color: #3498db;
+}
+
+
 @media (max-width: 768px) {
-    /* testing mobile breakpoint */
+  /* Testing Mobile Breakpoint */
+  .hero {
+    background: linear-gradient(135deg, #44de10 0%, #1896c7 100%);
+  }
 
-    .hero {
-        background:  rgb(70, 79, 239);
-    }
-}
-/* mobile navigation */
-
-.main-nav {
+  /* Mobile Navigation */
+  .main-nav {
     display: none;
-} 
-.hamburger {
+  }
+  .hamburger {
     display: block;
-}
-.hamburger:focus + .mobile-nav {
+  }
+  .hamburger:focus + .mobile-nav {
     display: flex;
+  }
 }
